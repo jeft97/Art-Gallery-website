@@ -1,0 +1,7 @@
+.main-content{
+    grid-column: center-start / center-end;
+    grid-row: 2 / 3;
+    
+    padding: 18rem 0;
+    background-color: var(--clr-white);
+}

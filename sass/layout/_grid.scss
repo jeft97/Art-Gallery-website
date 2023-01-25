@@ -1,0 +1,6 @@
+.wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns:[full-start ] minmax(2rem ,10.4rem) [center-start ] repeat(12, [col-start]1fr [col-end]) [center-end] minmax(2rem ,10.4rem)[full-end];
+    grid-template-rows: 100vh repeat(2, auto);
+}

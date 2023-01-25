@@ -1,0 +1,58 @@
+
+
+.hero{
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns:[full-start ] minmax(2rem ,12rem) [center-start ] repeat(12, [col-start]1fr [col-end]) [center-end] minmax(2rem ,16.4rem)[full-end];
+    grid-template-rows: 100vh;
+    &__box{
+        
+        &--1{
+            position: relative;
+            grid-column: full-start / col-end 3;
+            grid-row: 1/2;
+            background-color: var(--clr-secondary);
+            overflow: hidden;
+            z-index: 10;
+        }
+        &--2{
+            position: relative;
+            grid-column: col-start 4 / col-end 9;
+            z-index: 1;
+            grid-row: 1/2;
+        }
+        &--3{
+            grid-row: 1/2;
+            grid-column: col-start 10 / col-end 12;
+            position: relative;
+           
+        }
+        
+    }
+    &--img{
+        display: block;
+        max-width: 100%;
+        height:6rem;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    margin-bottom: 10rem;
+    
+}
+
+
+.picture{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+    &--img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

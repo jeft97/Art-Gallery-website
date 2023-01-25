@@ -1,0 +1,76 @@
+body{
+    font-family: var(--ff-default);
+    font-weight: var(--fw-default);
+    font-size: var(--fs-default);
+    line-height: 1.4;
+    color: var(--clr-grey-dark);
+    background-color: var(--clr-white);
+}
+
+
+.heading{
+
+    &--1{
+        font-size: 9.6rem;
+        font-family: var(--ff-heading);
+        font-weight: var(--fw-heading);
+        text-transform: uppercase;
+        line-height: .9;
+        color: var(--clr-secondary);
+    }
+    &--2{
+        font-family: var(--ff-heading);
+        font-weight: var(--fw-heading);
+        text-transform: uppercase;
+        line-height: 1;
+        color: inherit;
+        font-size: clamp(1rem,4vw,6rem);
+        margin-bottom: 1.2rem;
+        &>span{
+            display: block;
+        }
+    }
+
+
+}
+
+
+
+.logo{
+    position: absolute;
+    display: block;
+    
+    &--sup{
+        display: block;
+    }
+    &--sub{
+        display: block;
+    }
+    &-p--1{
+        top:18%;
+        right: -16.5rem;
+        color: var(--clr-white);
+    }
+    &-p--2{
+        top:18%;
+        left: -28.5rem;
+    }
+
+   
+}
+
+
+.text{
+    color: var(--clr-secondary);
+    width: 21.5ch;
+    font-size: var(--fs-default);
+    
+    &-box{
+        position: absolute;
+        top:16%;
+        left: -30%;
+        z-index: 100;
+    }
+
+}
+

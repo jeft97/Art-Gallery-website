@@ -1,0 +1,43 @@
+.location{
+    grid-column: full-start / full-end;
+    grid-row: 2 / 3;
+    background-color: var(--clr-secondary);
+
+    display: grid;
+    grid-template-columns:[full-start ] minmax(2rem ,10.4rem) [center-start ] repeat(12, [col-start]1fr [col-end]) [center-end] minmax(2rem ,10.4rem)[full-end];
+    
+    padding: 8rem 0;
+    
+    &__heading--2{
+        color: var(--clr-white);
+    }
+
+    &__content{
+       grid-column: center-start / center-end;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    &__adress{
+        display: block;
+        color: var(--clr-white);
+        &--street{
+            display: block;
+            font-size: 3.6rem;
+            font-family: var(--ff-heading);
+            color: var(--clr-primary);
+            margin-bottom: 1rem;
+        }
+        &--desc{
+            width: 35ch;
+            margin-top: 1.5rem;
+        }
+    }
+    
+}
+
+address{
+    font-style: normal;
+    display: inline-block;
+}
+

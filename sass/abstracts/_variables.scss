@@ -1,0 +1,16 @@
+:root{
+    --clr-primary:hsl(24, 56%, 63%);
+    --clr-secondary:hsl(0, 0%, 8%);
+
+    --clr-grey-dark:hsl(0, 0%, 27%);
+    --clr-white:hsl(0, 0%, 100%);
+
+    --ff-heading:'Big Shoulders Display', cursive;
+    --ff-default:'Outfit', sans-serif;
+    --fw-heading:900;
+    --fw-default:300;
+    --fs-default:2.2rem;
+    --fs-small: calc ((var(--fs-default) - 0.4rem));
+}
+
+

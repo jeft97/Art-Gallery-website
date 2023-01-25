@@ -1,0 +1,78 @@
+.box-button{
+    position: absolute;
+    top: 58%;
+    left: -30%;
+    z-index: 1000;
+
+    &--back{
+        position: absolute;
+        top: 0%;
+        left: 10rem;
+        z-index: 1000;
+    }
+
+}
+
+.c-btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+
+    font-weight: var(--fw-heading);
+    font-family: var(--ff-heading);
+    &--location{
+
+        &-left{
+            background-color: var(--clr-secondary);
+            color: var(--clr-white);
+            width: 20rem;
+            height: 7.2rem;
+            display: grid;
+            place-items: center;
+            font-size: 2rem;
+            z-index: 100;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0%;
+                height: 7.2rem;
+                
+                left:0%;
+                z-index: -1;
+                background-color: var(--clr-primary);
+                transition: width .4s;
+            }
+
+           
+        }
+        &-right{
+            width: 5.5rem;
+            height: 7.2rem;
+            background-color: var(--clr-primary);
+            display: grid;
+            place-items: center;
+            position: relative;
+            z-index: 100;
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 0%;
+                height: 7.2rem;
+                right:0;
+                z-index: -1;
+                background-color: var(--clr-secondary);
+                transition: width .4s;
+
+            }
+           
+        }
+
+        &:hover &-left::after,
+        &:hover &-right::after{
+            width: 100%;
+        }
+    }
+}
